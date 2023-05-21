@@ -47,6 +47,7 @@ public class TestNavMesh : MonoBehaviour {
         var mesh = new Mesh();
         mesh.MarkDynamic();
         var go = new GameObject(name);
+        go.name = name;
         go.AddComponent<MeshRenderer>().material = debugMeshMat;
         go.transform.position = Vector3.up * high;
         return go.AddComponent<MeshFilter>();
